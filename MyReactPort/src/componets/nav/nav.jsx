@@ -1,0 +1,55 @@
+import React from "react";
+import "./Nav.css";
+
+const pages = ["About", "Portfolio", "Contact", "Resume"];
+
+function Navigation({ currentPage, setCurrentPage, handleCloseNav }) {
+    return (
+        <ul className="nav nav-tab" style={{ paddingRight: "20px", paddingTop: "20px" }}>
+            <li className="nav-item">
+                <a 
+                    id="nav-toggle"
+                    href="#about"
+                    onClick={() => setCurrentPage("About")}
+                    className={currentPage === "About"? "nav-link active" : "nav-link"}
+                >
+                    About
+                </a>
+            </li>
+            <li className='nav-item'>
+                <a
+                    id="nav-toggle"
+                    href="#portfolio"
+                    onClick={() => setCurrentPage("Portfolio")}
+                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
+                >
+                    Portfolio
+                </a>
+            </li>
+            <li className="nav-item">
+                <a
+                    id="nav-toggle"
+                    href="#contact"
+                    onClick={() => setCurrentPage("Contact")}
+                    className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+                >
+                    Contact
+                </a>
+            </li>
+            <li className="nav-item">
+                <a
+                    id="nav-toggle"
+                    href="#resume"
+                    onClick={() => setCurrentPage("Resume")}
+                    className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+                >
+                    Resume
+                </a>
+            </li>
+        </ul>
+    );
+}
+
+//Export the Navigation component
+
+export default Navigation;
