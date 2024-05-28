@@ -11,44 +11,44 @@ import Typography from "@mui/material/Typography";
 
 // Function that renders the portfolio cards, grid, buttons & exports
 export function Project({ project }) {
-  return (
+return (
     <Grid item xs={4} style={{ display: "flex", justifyContent: "center" }}>
-      <Card sx={{ maxWidth: 345 }} style={{ backgroundColor: "floralwhite" }}>
-        <CardMedia
-          component="img"
-          alt="displayed projects with associated links"
-          height="140"
-          image={project.image}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {project.Title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {project.description}
-          </Typography>
-        </CardContent>
-        <CardActions style={{ justifyContent: "center" }}>
-          <Button
-            id="portfolio-button"
-            className="pop-on-hover"
-            href={project.link}
-            size="small"
-          >
-            Live URL
-          </Button>
-          <Button
-            id="portfolio-button"
-            className="pop-on-hover"
-            href={project.gitHub}
-            size="small"
-          >
-            GitHub
-          </Button>
-        </CardActions>
-      </Card>
+        <Card sx={{ maxWidth: 345, borderRadius: "10px" }} style={{ backgroundColor: "F7C1BB" }}>
+            <CardMedia
+                component="img"
+                alt="displayed projects with associated links"
+                height="140"
+                image={project.image}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {project.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                </Typography>
+            </CardContent>
+            <CardActions style={{ justifyContent: "center" }}>
+                <Button
+                    id="portfolio-button"
+                    className="pop-on-hover"
+                    href={project.link}
+                    size="small"
+                >
+                    Live URL
+                </Button>
+                <Button
+                    id="portfolio-button"
+                    className="pop-on-hover"
+                    href={project.gitHub}
+                    size="small"
+                >
+                    GitHub
+                </Button>
+            </CardActions>
+        </Card>
     </Grid>
-  );
+);
 }
 
 // Function/component written to map over projects.js array
