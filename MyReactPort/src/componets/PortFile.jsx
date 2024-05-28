@@ -3,7 +3,7 @@ import React from "react";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/resume/resume.jsx";
-// import Portfolio from "./pages/Portfolio/Portfolio";
+import Portfolio from "./pages/port/portfolio";
 
 // Function that renders selected page state & exports
 export default function PortfolioContainer({ currentPage, setCurrentPage }) {

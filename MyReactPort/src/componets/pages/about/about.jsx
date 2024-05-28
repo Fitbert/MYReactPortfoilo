@@ -1,4 +1,3 @@
-import React from 'react';
 import "./About.css";
 import CardMedia from "@mui/material/CardMedia";
 
@@ -21,9 +20,8 @@ export default function About(){
         <div style={{width: "60%", margin: "0 auto"}}>
             <h1 id="about-me">About Me</h1>
             <p id="para_About">
-                Hi I' a new developer with a a varied background will fill out more soon. 
+                Hi I&apos;m a new developer with a a varied background will fill out more soon. 
             </p>
-
 
         </div>
         </>
