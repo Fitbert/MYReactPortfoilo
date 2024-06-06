@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
- import { projects } from "../../../projects";
+import { projects } from "../../projects";
 
 // Function that renders the portfolio cards, grid, buttons & exports
 export function Project({ project }) {
@@ -18,7 +18,7 @@ return (
                 component="img"
                 alt="displayed projects with associated links"
                 height="140"
-                image={project.image}
+                image={project.image} 
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
