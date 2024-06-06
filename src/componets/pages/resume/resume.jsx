@@ -13,6 +13,15 @@ export default function Resume() {
     <Box>
       <div>
         <a
+         href={PdfFile}
+         download="Albert Terrazas Resumé"
+         target="_blank"
+         style={{
+           display: "flex",
+           justifyContent: "center",
+           paddingTop: "25px",
+         }}
+         rel="noreferrer"
           
         >
           <Button id="resume-button" className="pop-on-hover">
