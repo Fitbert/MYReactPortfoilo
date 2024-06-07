@@ -9,7 +9,7 @@ export const projects = [
     {
         title: "Code Quiz",
         description: "Bootcamp code quiz to test your knowledge with a timer and high score board.",
-        image: "src/images/codequiz.png",
+        image: "src/images/codequiz.jpg",
         link: "https://fitbert.github.io/Bootcamp-Coder-Quiz/index.html",
         gitHub: "https://github.com/Fitbert/Bootcamp-Coder-Quiz.git",
     },
